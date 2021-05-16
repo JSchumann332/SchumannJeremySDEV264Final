@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9000000"
+    tools:context=".NotesPage">
+
+    <ImageView
+        android:id="@+id/notepadbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="2"
+        android:src="@drawable/notepadpic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="660dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notetext"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/usernotes"
+            style="NotesStyle"
+            android:layout_width="match_parent"
+            android:layout_height="622dp"
+            android:clickable="false"
+            android:gravity="top"
+            android:hint="@string/enter_notes_hint"
+            android:inputType="textAutoCorrect|textMultiLine|text|textCapSentences|textImeMultiLine"
+            android:paddingStart="25dp"
+            android:paddingTop="5dp"
+            android:scrollHorizontally="false"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/med_blue"
+        android:text="Load"
+        app:layout_constraintBottom_toBottomOf="@+id/notepadbg"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Save"
+        android:backgroundTint="@color/med_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/notepadbg"
+        app:layout_constraintStart_toStartOf="@+id/notepadbg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

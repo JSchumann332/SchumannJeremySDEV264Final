@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sodium+Diet Track</string>
+    <string name="titlebar">Sodium+Diet Track</string>
+    <string name="todayssodium">Today\'s Sodium</string>
+    <string name="addfoodbutton">Add Food</string>
+    <string name="todays_sodium">Today\'s Sodium</string>
+    <string name="weekly_sodium">Weekly Sodium</string>
+    <string name="enter_notes_hint">Enter notes here, such as a recipe\'s sodium content or low sodium alternatives!</string>
+    <string name="daily_intake_hint">2400mg (Default)</string>
+    <string name="rentention_hint">Forever (Default)</string>
+    <string name="mg">Sodium+Diet Track</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.sodiumdiettrack">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sdtrack"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/sdtrack_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SodiumDietTrack">
+        <activity android:name=".BloodPressure"/>
+        <activity android:name=".FeedBack"/>
+        <activity android:name=".Settings" />
+        <activity android:name=".NotesPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
